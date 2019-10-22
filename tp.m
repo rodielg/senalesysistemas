@@ -15,4 +15,4 @@ end
 Sine = sineSweep(10,44100,20,20000);
 filename = 'SineSweep1.wav';
 audiowrite(filename,Sine,44100);
-clear Sine Fs;
+clear Sine Fs
