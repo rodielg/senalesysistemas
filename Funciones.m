@@ -8,6 +8,7 @@ function [funcion] = Funciones()
     funcion.RI=@RI;
     funcion.sintetizacionRI=@sintetizacionRI;
     funcion.rtaAlImpulso=@rtaAlImpulso;
+    funcion.convLog=@convLog
     
 end
 
@@ -118,4 +119,9 @@ end
 release(fileReader)
 release(fileWriter)
 release(aPR)
+end
+
+function [conLog] = convlog(a)
+
+convlog = 20*log(a/(max(a)))
 end
