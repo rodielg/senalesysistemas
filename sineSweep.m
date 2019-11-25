@@ -13,7 +13,7 @@ L = (Time/(log(w2/w1)));
 SineSweep = sin(K*(exp(S/L)-1));
 SineSweep = SineSweep*0.9;  %Ajuste por clipeo
 Fs = SampleRate;
-
-audiowrite('Sine Sweep.wav',SineSweep,Fs);
+%plot(SineSweep,T)
+%audiowrite('Sine Sweep.wav',SineSweep,Fs);
 end
 
