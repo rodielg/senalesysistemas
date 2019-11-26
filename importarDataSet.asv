@@ -11,7 +11,7 @@ function [dataset] = importarDataSet()
 i=1;
 reply='Y';
 while (reply=='Y')
-    archivo= input('Que archivo wav queres importar:', 's');
+    archivo= app.QuearchivosqueresimportarEditField.Value;
     archivo=char(archivo);
     [x,fs]=audioread(archivo);
     info = audioinfo(archivo);
